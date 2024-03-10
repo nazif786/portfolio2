@@ -4,7 +4,7 @@ const Navbar = () => {
   const links = [
     { label: "Home", href: "/#home" },
     { label: "About Me", href: "/#about" },
-    { label: "Experience", href: "/#experience" },
+    { label: "Skills", href: "/#experience" },
     { label: "Projects", href: "/#projects" },
     { label: "Contact", href: "/#contact" },
   ];
@@ -14,12 +14,12 @@ const Navbar = () => {
         SHIRZAI
         <span className="text-red-800 text-12xl">.</span>
       </h1>
-      <div>
+      <div className="sticky">
         <ul className=" hidden md:flex md:space-x-7 mt-7 text-sm">
           {links.map((link) => (
             <li
               key={link.label}
-              className="list-none hover:text-slate-600 nav-link"
+              className="list-none hover:text-slate-600 nav-link "
             >
               <Link href={link.href}>{link.label}</Link>
             </li>

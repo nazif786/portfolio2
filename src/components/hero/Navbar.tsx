@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
   return (
     <nav className="md:flex md:justify-between md:px-5 md:py-3">
-      <h1 className="font-extrabold font-mono text-5xl text-center md:text-left mt-3">
+      <h1 className="font-extrabold font-mono text-3xl text-center md:text-left mt-3">
         SHIRZAI
         <span className="text-red-800 text-12xl">.</span>
       </h1>

@@ -2,16 +2,19 @@
 import Image from "next/image";
 import image from "../../../public/profilephoto.jpg";
 import { Typewriter } from "react-simple-typewriter";
-// border-solid border-2 border-orange-700
+import { Button } from "../ui/button";
+import Link from "next/link";
+
+// border-solid border-2 border-orange-700 flex flex-row items-center justify-center
 const HeroSection = () => {
   return (
-    <div className="min-h-[85%] md:w-full flex flex-row items-center justify-center">
+    <section className="min-h-[85%] md:w-full mt-10">
       <div className="md:w-[95%] flex flex-col md:flex-row md:items-center px-1 md:justify-between">
         <div className="order-last md:order-first md:w-[50%] text-center m-auto ">
           <p className="text-xl font-extrabold mb-1">
             Hello, I am <span className="text-primary">Nazifullah</span>
           </p>
-          <p className="py-2 italic text-2xl font-bold">
+          <p className="py-2 italic text-2xl font-semibold font-serif">
             <Typewriter
               words={[
                 "Full Stack Developer",
@@ -30,6 +33,16 @@ const HeroSection = () => {
             Crafting Data-Driven Web Applications: Seamlessly Integrating
             Front-end Interactivity with Robust Back-end Operations
           </p>
+          <div className="flex space-x-3 justify-center my-5">
+            <Link href="">
+              <Button variant="btn" size="btn">
+                Hire me
+              </Button>
+            </Link>
+            <Button variant="btn_h" size="btn">
+              Resume
+            </Button>
+          </div>
         </div>
         <div className="mb-5 w-[60%] md:w-[28%] rounded-full shadow-[0px_1px_0px_0px] shadow-primary m-auto">
           <Image
@@ -39,7 +52,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

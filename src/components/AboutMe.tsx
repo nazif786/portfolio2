@@ -1,10 +1,12 @@
+import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 // border-solid border-2 border-orange-700 flex flex-row items-center justify-center
 
 const AboutMe = () => {
   return (
     <section id="about">
-      <div className="p-3 md:p-12 md:max-w-[75%] lg:w-[60%]  md:my-20 m-auto flex flex-col space-y-5 shadow-2xl">
+      <div className="p-3 md:p-12 md:max-w-[75%] lg:w-[60%]  md:my-20 m-auto flex flex-col space-y-5 shadow-2xl ">
         <div className="text-center">
           <h1 className="font-serif text-3xl ">About Me</h1>
           <p className="font-mono text-l">Why Choose Me?</p>
@@ -27,9 +29,24 @@ const AboutMe = () => {
             <li> Restfull APIs and Web APIs </li>
             <li> Data Driven Application, Data Science and Big Data </li>
             <li>
-              Database Desgin and Development (MangoDB, MySQL, SQL Sever etc){" "}
+              Database Desgin and Development (Postgres, MangoDB, MySQL, SQL
+              Sever etc){" "}
             </li>
           </ul>
+        </div>
+        <div className="flex space-x-3 justify-center my-5 md:pt-10 pb-10">
+          <Link href="">
+            <Button variant="btn" size="btn">
+              Hire me
+            </Button>
+          </Link>
+          <Button
+            variant="btn_h"
+            size="btn"
+            className="border-solid border-slate-800 border-2"
+          >
+            Resume
+          </Button>
         </div>
       </div>
     </section>

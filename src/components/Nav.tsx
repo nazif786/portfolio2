@@ -1,10 +1,11 @@
 import HeroSection from "./hero/HeroSection";
 import Navbar from "./hero/Navbar";
+import bg from "../../public/bg.jpg";
 
 const Nav = () => {
   return (
-    <div className="bg-slate-50 px-1">
-      <div className="h-svh">
+    <div className={`bg-background px-1 `}>
+      <div className="h-svh z-50">
         <div className="md:w-[85%] m-auto">
           <Navbar />
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ModeToggle } from "./ToggleTheme";
 
 const Navbar = () => {
   const links = [
@@ -24,6 +25,9 @@ const Navbar = () => {
               <Link href={link.href}>{link.label}</Link>
             </li>
           ))}
+          <li>
+            <ModeToggle />
+          </li>
         </ul>
       </div>
     </nav>

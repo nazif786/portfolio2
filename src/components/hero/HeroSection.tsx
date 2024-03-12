@@ -8,7 +8,7 @@ import Link from "next/link";
 // border-solid border-2 border-orange-700 flex flex-row items-center justify-center
 const HeroSection = () => {
   return (
-    <section className="min-h-[85%] md:w-full mt-10">
+    <section className=" min-h-[85%] md:w-full mt-10 md:mt-20 relative">
       <div className="md:w-[95%] flex flex-col md:flex-row md:items-center px-1 md:justify-between">
         <div className="order-last md:order-first md:w-[50%] text-center m-auto ">
           <p className="text-xl font-extrabold mb-1">

@@ -1,9 +1,9 @@
 import AboutMe from "@/components/AboutMe";
-import Skills from "@/components/skills";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col md:gap-32">
       <AboutMe />
       <Skills />
       <h1> portfolio </h1>

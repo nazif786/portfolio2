@@ -23,4 +23,10 @@ export const SkillsData = [
     icon: "/dataScience.png",
     skills: ["HTML/CSS", "JavaScript", "Typescript", "TailwindCSS"],
   },
+  {
+    count: 4,
+    title: "Tools",
+    icon: "/dataScience.png",
+    skills: ["HTML/CSS", "JavaScript", "Typescript", "TailwindCSS"],
+  },
 ];

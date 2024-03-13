@@ -47,22 +47,22 @@ const Skills = () => {
 
   return (
     <section>
-      <div className="p-3 md:max-w-[85%] m-auto h-dvh py-12 bg-background">
+      <div className="p-3 md:max-w-[85%] m-auto h-dvh bg-background">
         <div className="text-center">
           <h1 className="font-serif text-3xl"> My Skills</h1>
         </div>
-        <div className="bg-background ">
-          <section className="flex flex-col m-auto sm:flex-row border-orange-100 border-2 my-12 ">
+        <div className="bg-background md:mt-28">
+          <section className="flex flex-col m-auto sm:flex-row my-12 ">
             <div className="sm:flex w-full sm:w-1/2 md:w-6/12">
-              <div className="grid grid-cols-2 md:grid-cols-2 gap-5 mr-0 md:mr-7">
+              <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-5 mr-0 md:mr-7">
                 {SkillsData.map((skill, index) => (
                   <a
                     key={index}
                     onClick={() => handleCardClick(skill, index)}
                     className={`dark:bg-foreground/80 dark:text-background dark:shadow-primary relative 
-                    text-[12px] md:text-[16px] md:font-lightbold shadow-md
+                    text-[12px] md:text-[16px] md:font-lightbold shadow-sm md:shadow-md
                     shadow-destructive/30 cursor-pointer
-                    transition-all transform p-1 md:p-5 duration-300
+                    transition-all transform p-2 md:p-5 duration-300
                     group rounded-xl center flex flex-col justify-center items-center
                     ${
                       currentIndex === index
@@ -87,6 +87,29 @@ const Skills = () => {
                     </h3>
                   </a>
                 ))}
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 overflow-visible my-5 md:m-0">
+              <div className="rounded-xl bg-accent p-3 md:p-5">
+                <section
+                  className={`fade-left overflow-hidden ${isFadded ? "fade-out" : ""}`}
+                >
+                  <p
+                    className={`font-bold text-foreground/50 text-base md:text-lg transition duration-500 transform opacity-100 `}
+                  >
+                    Skills Info:
+                  </p>
+                  <h3 className="text-xl md:text-2xl mb-3 transition duration-500 transform opacity-100">
+                    {skillData.title}
+                  </h3>
+                  <ul className="list-disc ml-7 text-base md:text-xl p-y2 ">
+                    {skillData.skills.map((skill, index) => (
+                      <li key={index} className="py-[2px]">
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               </div>
             </div>
           </section>

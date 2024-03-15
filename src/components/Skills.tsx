@@ -47,7 +47,7 @@ const Skills = () => {
 
   return (
     <section>
-      <div className="p-3 md:max-w-[85%] m-auto h-dvh bg-background">
+      <div className="p-3 md:max-w-[85%] lg:max-w-[70%] m-auto h-dvh bg-background">
         <div className="text-center">
           <h1 className="font-serif text-3xl"> My Skills</h1>
         </div>
@@ -66,11 +66,11 @@ const Skills = () => {
                     group rounded-xl center flex flex-col justify-center items-center
                     ${
                       currentIndex === index
-                        ? "bg-primary/90 text-foreground dark:bg-primary/90 dark:text-foreground "
+                        ? "bg-primary/90 text-foreground dark:bg-primary/90 dark:text-foreground shadow-none dark:shadow-none"
                         : ""
                     }`}
                   >
-                    <div className="hidden md:block md:p-3 transition-all transform duration-500 group-hover:scale-125">
+                    <div className="hidden md:block lg:p-1 transition-all transform duration-500 group-hover:scale-125">
                       <Image
                         src={skill.icon}
                         height={48}
@@ -89,17 +89,17 @@ const Skills = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full md:w-1/2 overflow-visible my-5 md:m-0">
-              <div className="rounded-xl bg-accent p-3 md:p-5">
+            <div className="w-full md:w-1/2 overflow-visible my-5 md:m-0 ml-3">
+              <div className="rounded-xl bg-accent p-3 md:p-10">
                 <section
-                  className={`fade-left overflow-hidden ${isFadded ? "fade-out" : ""}`}
+                  className={`fade-left overflow-hidden ${isFadded ? "fade-out" : ""} min-h-[370px] `}
                 >
                   <p
-                    className={`font-bold text-foreground/50 text-base md:text-lg transition duration-500 transform opacity-100 `}
+                    className={`font-bold text-foreground/50 text-base md:text-lg transition duration-500 transform opacity-100 text-center`}
                   >
                     Skills Info:
                   </p>
-                  <h3 className="text-xl md:text-2xl mb-3 transition duration-500 transform opacity-100">
+                  <h3 className="text-xl md:text-2xl my-3 transition duration-500 transform opacity-100 text-primary ">
                     {skillData.title}
                   </h3>
                   <ul className="list-disc ml-7 text-base md:text-xl p-y2 ">

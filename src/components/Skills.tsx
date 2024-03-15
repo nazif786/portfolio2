@@ -63,10 +63,10 @@ const Skills = () => {
                     text-[12px] md:text-[16px] md:font-lightbold shadow-sm md:shadow-md
                     shadow-destructive/30 cursor-pointer
                     transition-all transform p-2 md:p-5 duration-300
-                    group rounded-xl center flex flex-col justify-center items-center
+                    group rounded-xl center flex flex-col justify-center items-center 
                     ${
                       currentIndex === index
-                        ? "bg-primary/90 text-foreground dark:bg-primary/90 dark:text-foreground shadow-none dark:shadow-none"
+                        ? "bg-primary/90 text-foreground dark:bg-primary/90 dark:text-foreground shadow-none dark:shadow-none rounded-tr-full"
                         : ""
                     }`}
                   >

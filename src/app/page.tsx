@@ -1,5 +1,5 @@
 import AboutMe from "@/components/AboutMe";
-import Projects from "@/components/Projects";
+import Projects from "@/components/projects/Projects";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
-      <h1> portfolio </h1>
+      <h1 className="border-2"> portfolio </h1>
     </div>
   );
 }

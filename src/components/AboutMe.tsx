@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const AboutMe = () => {
   return (
-    <section id="about">
+    <section>
       <div className="p-3 md:p-12 md:max-w-[75%] lg:w-[60%]  md:my-20 m-auto flex flex-col space-y-5 shadow-2xl ">
         <div className="text-center">
           <h1 className="font-serif text-3xl ">About Me</h1>

@@ -8,8 +8,8 @@ const CreditSales = () => {
       <h1 className="font-extrabold my-5 px-1 md:px-3 text-slate-600 dark:text-slate-500">
         Mobile Cridit Sales Management System
       </h1>
-      <div className="flex flex-row gap-[4%]">
-        <div className=" w-[60%]  px-1 md:px-3">
+      <div className="flex flex-col md:flex-row gap-[4%]">
+        <div className="md:w-[60%] px-1 md:px-3">
           <Image
             width={650}
             height={650}
@@ -18,8 +18,8 @@ const CreditSales = () => {
             alt={"Project Image"}
           />
         </div>
-        <div className=" w-[36%] px-1 md:px-3">
-          <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
+        <div className=" md:w-[36%] px-1 md:px-3">
+          <p className="text-slate-600 dark:text-slate-400 text-sm mb-3 py-2">
             This application is designed for businesses engaged in the sale of
             mobile credits to customers, managing customer data, sales,
             suppliers, and purchases, while tracking changes to sensitive

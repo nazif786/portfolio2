@@ -13,13 +13,12 @@ const AboutMe = () => {
         </div>
         <p>
           With proficiency in the latest modern technologies like MERN stack,
-          Redux, React, Node.js, GraphQL, and MongoDB, I can help your
-          organization develop dynamic, responsive, and user-friendly web
-          applications that are scalable and secure. My track record of
-          delivering quality results on-time and within budget speaks to my
-          commitment to excellence. Let me help you achieve your business
-          objectives with my passion for staying up-to-date with the latest
-          industry trends and technologies.
+          NextJS React, Node.js, and MongoDB/MySQL, I can help your organization
+          develop dynamic, responsive, and user-friendly web applications that
+          are scalable and secure. My track record of delivering quality results
+          on-time and within budget speaks to my commitment to excellence. Let
+          me help you achieve your business objectives with my passion for
+          staying up-to-date with the latest industry trends and technologies.
         </p>
         <div>
           <ul className="list-disc pl-5">

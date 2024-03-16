@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Contact from "@/components/Contact";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/Skills";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Contact />
       <h1 className="border-2"> portfolio </h1>
     </div>
   );

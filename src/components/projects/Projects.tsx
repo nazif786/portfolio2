@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="text-center">
           <h1 className="font-serif text-3xl"> My Projects</h1>
         </div>
-        <div className="flex flex-col gap-20">
+        <div className="block md:flex md:flex-col gap-20">
           <CreditSales />
           <ProjectTracking />
         </div>

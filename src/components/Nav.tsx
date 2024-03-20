@@ -5,7 +5,7 @@ import bg from "../../public/bg.jpg";
 const Nav = () => {
   return (
     <div className={`bg-background px-1 `}>
-      <div className="h-svh z-50">
+      <div className="h-content z-50">
         <div className="md:w-[85%] m-auto">
           <Navbar />
         </div>

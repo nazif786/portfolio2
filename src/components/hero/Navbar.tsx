@@ -1,36 +1,44 @@
-import Link from "next/link";
+"use client";
+import { useState } from "react";
+import { LineMdCloseToMenuAltTransition } from "../ui/LineMdCloseToMenuAltTransition";
+import { LineMdMenuToCloseAltTransition } from "../ui/LineMdMenuToCloseAltTransition";
+import { Button } from "../ui/button";
+import NavLinks from "./NavLinks";
+import MobileNavLinks from "./MobileNavLinks";
 import { ModeToggle } from "./ToggleTheme";
 
 const Navbar = () => {
-  const links = [
-    { label: "Home", href: "/#home" },
-    { label: "About Me", href: "/#about" },
-    { label: "Skills", href: "/#skills" },
-    { label: "Projects", href: "/#projects" },
-    { label: "Contact", href: "/#contact" },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
+  const ToggleMenu = () => {};
   return (
-    <nav className="md:flex md:justify-between md:px-5 md:py-3">
-      <h1 className="font-extrabold font-mono text-3xl text-center md:text-left mt-3">
-        SHIRZAI
-        <span className="text-red-800 text-12xl">.</span>
-      </h1>
-      <div className="sticky">
-        <ul className=" hidden md:flex md:space-x-7 mt-7 text-sm">
-          {links.map((link) => (
-            <li
-              key={link.label}
-              className="list-none hover:text-slate-600 nav-link "
-            >
-              <Link href={link.href}>{link.label}</Link>
-            </li>
-          ))}
-          <li>
+    <>
+      <nav className="flex justify-between md:px-5 md:py-3">
+        <h1 className="font-extrabold font-mono text-3xl text-center md:text-left mt-3">
+          SHIRZAI
+          <span className="text-red-800 text-12xl">.</span>
+        </h1>
+        <div>
+          <div className="sticky">
+            <NavLinks />
+          </div>
+          <div className="md:hidden absolute top-1 right-1 z-30">
             <ModeToggle />
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <Button onClick={() => setIsOpen(!isOpen)} variant={"link"}>
+              {isOpen ? (
+                <LineMdMenuToCloseAltTransition fontSize={18} />
+              ) : (
+                <LineMdCloseToMenuAltTransition fontSize={18} />
+              )}
+            </Button>
+          </div>
+        </div>
+      </nav>
+      {isOpen && (
+        <div className="absolute top-0 left-0 z-20 w-full h-dvh bg-accent">
+          <MobileNavLinks />
+        </div>
+      )}
+    </>
   );
 };
 

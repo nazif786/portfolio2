@@ -77,9 +77,11 @@ const HeroSection = () => {
                 Hire me
               </Button>
             </Link>
+            {/* <Link href="/Nazifullah.pdf" target="_blank"> */}
             <Button variant="btn_h" size="btn">
               Resume <SolarFileRightBoldDuotone className="ml-4 text-2xl" />
             </Button>
+            {/* </Link> */}
           </div>
         </div>
         <div className="mb-5 w-[60%] md:w-[28%] rounded-full shadow-[0px_1px_0px_0px] shadow-primary m-auto">
@@ -90,7 +92,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="md:w-9/12 mx-auto md:px-3 md:mt-7 flex flex-row space-x-0 md:space-x-3">
+      <div className="md:w-11/12 lg:w-9/12 mx-auto md:px-3 md:mt-7 flex flex-row space-x-0 md:space-x-3">
         <div className="hidden md:block">
           <h1 className="font-bold mt-3 text-sm">Tech Stack:</h1>
         </div>

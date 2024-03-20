@@ -1,5 +1,7 @@
 import CreditSales from "./CreditSales";
+import Games from "./Games";
 import ProjectTracking from "./ProjectTracking";
+import ShamsMedex from "./ShamsMedex";
 
 const Projects = () => {
   return (
@@ -11,6 +13,8 @@ const Projects = () => {
         <div className="block md:flex md:flex-col gap-20">
           <CreditSales />
           <ProjectTracking />
+          <ShamsMedex />
+          <Games />
         </div>
       </div>
     </section>

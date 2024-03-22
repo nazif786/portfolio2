@@ -15,16 +15,13 @@ const Contact = () => {
         </div>
         <form
           action={async (formData) => {
-            const { data, error } = await sendEmail(formData);
+            const { error } = await sendEmail(formData);
+
             if (error) {
               toast.error(error);
-              alert(error);
               return;
-            } else {
-              toast.success("Message sent successfully");
-
-              // alert("message send successfully");
             }
+            toast.success("Email sent successfully!");
           }}
           className="flex flex-col space-y-6"
         >

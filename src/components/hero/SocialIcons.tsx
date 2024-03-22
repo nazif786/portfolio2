@@ -19,12 +19,12 @@ const SocialIcons = () => {
         <a href="https://twitter.com/nazifmal" target="_blank">
           <Fa6BrandsSquareXTwitter fontSize={26} />
         </a>
-        <a href="https://www.facebook.com/mal.nz" target="_blank">
+        {/* <a href="https://www.facebook.com/mal.nz" target="_blank">
           <DeviconFacebook fontSize={24} className="rounded-md" />
-        </a>
-        <a href="917993841638" target="_blank">
+        </a> */}
+        {/* <a href="917993841638" target="_blank">
           <LogosWhatsappIcon fontSize={24} />
-        </a>
+        </a> */}
         <a href="mailto:nazit.it@gmail.com">
           <SkillIconsGmailDark fontSize={24} />
         </a>

@@ -1,9 +1,9 @@
+"use client";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { sendEmail } from "../actions/sendEmail";
 import { Textarea } from "./ui/textarea";
-import { Button } from "./ui/button";
-import { PepiconsPrintPaperPlane } from "./ui/PepiconsPrintPaperPlane";
-import { BiSendPlus } from "./ui/BiSendPlus";
+import Submit_btn from "./Submit_btn";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   return (
@@ -13,24 +13,51 @@ const Contact = () => {
         <div className="text-center text-xl font-semibold mb-3 ">
           <h1>Send Me an Email:</h1>
         </div>
-        <form className="flex flex-col space-y-6">
+        <form
+          action={async (formData) => {
+            const { data, error } = await sendEmail(formData);
+            if (error) {
+              toast.error(error);
+              alert(error);
+              return;
+            } else {
+              toast.success("Message sent successfully");
+
+              // alert("message send successfully");
+            }
+          }}
+          className="flex flex-col space-y-6"
+        >
           <div className="grid w-full max-w-sm items-center gap-1.5 bg-background">
-            <Input type="email" id="email" placeholder="Email" />
+            <Input
+              name="senderEmail"
+              type="email"
+              id="email"
+              placeholder="Email"
+              max={200}
+              required
+            />
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5 bg-background">
-            <Input type="text" id="subject" placeholder="subject" />
+            <Input
+              name="subject"
+              type="text"
+              id="subject"
+              placeholder="subject"
+              max={200}
+              required
+            />
           </div>
           <div className="grid w-full gap-1.5">
             <Textarea
+              name="message"
               className="h-[250px] bg-background"
               placeholder="Type your message here."
               id="message"
+              maxLength={500}
+              required
             />
-          </div>
-          <div className="flex  w-full items-end justify-end">
-            <Button type="submit" variant="btn_h">
-              Send Email <BiSendPlus className="ml-3" />
-            </Button>
+            <Submit_btn />
           </div>
         </form>
       </div>

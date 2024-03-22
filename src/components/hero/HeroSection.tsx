@@ -98,7 +98,10 @@ const HeroSection = () => {
         </div>
         <div className="flex flex-row items-center justify-center md:space-x-4 text-center overflow-scroll lg:overflow-visible">
           {skills.map((skill, index) => (
-            <div className="text-2xl md:text-4xl opacity-50 hover:opacity-90 hover:translate-y-1 transition duration-300">
+            <div
+              key={index}
+              className="text-2xl md:text-4xl opacity-50 hover:opacity-90 hover:translate-y-1 transition duration-300"
+            >
               <div className="pl-1">{skill.icon}</div>
               <p className="hidden md:block text-xs">{skill.skill}</p>
             </div>

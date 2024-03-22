@@ -1,4 +1,5 @@
 import CreditSales from "./CreditSales";
+import CreditSalesNode from "./CreditSalesNode";
 import Games from "./Games";
 import ProjectTracking from "./ProjectTracking";
 import ShamsMedex from "./ShamsMedex";
@@ -15,6 +16,7 @@ const Projects = () => {
           <ProjectTracking />
           <ShamsMedex />
           <Games />
+          <CreditSalesNode />
         </div>
       </div>
     </section>

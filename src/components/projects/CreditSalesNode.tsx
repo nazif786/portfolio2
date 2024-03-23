@@ -25,10 +25,10 @@ const CreditSalesNode = () => {
             here). it uses basic JavaScript and ExpressJS. it is fully functinal
             with all the features.
           </p>
-          <p className="bold ">
+          <p className="bold">
             Tech Used:{" "}
             <span className="text-slate-600 dark:text-slate-400 text-sm ">
-              HTML, CSS, NodeJS, ExpressJS, MySQL,JavaScript, and Handlebars
+              HTML, CSS, NodeJS, ExpressJS, MySQL, JavaScript, and Handlebars
             </span>
           </p>
           <div className="my-3 flex gap-3">

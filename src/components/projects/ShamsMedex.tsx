@@ -2,8 +2,17 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import shamsMedex from "../../../public/shamsMedex.png";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 const ShamsMedex = () => {
+  const tools = [
+    "HTML",
+    "CSS",
+    "NodeJS",
+    "ExpressJS",
+    "JavaScript",
+    "Handlebars",
+  ];
   return (
     <div className="bg-background md:mt-20">
       <h1 className="font-extrabold my-5 px-1 md:px-3 text-slate-600 dark:text-slate-500">
@@ -28,9 +37,11 @@ const ShamsMedex = () => {
           </p>
           <p className="bold ">
             Tech Used:{" "}
-            <span className="text-slate-600 dark:text-slate-400 text-sm ">
-              HTML, CSS, NodeJS, ExpressJS, JavaScript, and Handlebars
-            </span>
+            {tools.map((tool) => (
+              <Badge key={tool} className="mr-1" variant={"secondary"}>
+                {tool}
+              </Badge>
+            ))}
           </p>
           <div className="my-3 flex gap-3">
             <Button

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { SkillsData } from "@/app/skillsData";
 import Image from "next/image";
+import { Badge } from "./ui/badge";
 
 interface Data {
   count: number;
@@ -105,10 +106,10 @@ const Skills = () => {
                   <h3 className="text-xl md:text-2xl my-3 transition duration-500 transform opacity-100 text-primary ">
                     {skillData.title}
                   </h3>
-                  <ul className="list-disc ml-7 text-base md:text-xl p-y2 ">
+                  <ul className="ml-0 text-base md:text-xl p-y2 ">
                     {skillData.skills.map((skill, index) => (
                       <li key={index} className="py-[2px]">
-                        {skill}
+                        <Badge className="px-5 py-2 w-full">{skill}</Badge>
                       </li>
                     ))}
                   </ul>

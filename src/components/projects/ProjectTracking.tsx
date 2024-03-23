@@ -2,8 +2,22 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import issueTracker from "../../../public/issueTracker.png";
 import Link from "next/link";
+import { Badge } from "../ui/badge";
 
 const ProjectTracking = () => {
+  const tools = [
+    "NextJS 14",
+    "React 18",
+    " Mysql 8",
+    "NodeJS 20",
+    "TypeScript",
+    "Tailwind CSS",
+    "Radix UI",
+    "NextAuth",
+    "Prisma",
+    " React-hook-form",
+    "Zod",
+  ];
   return (
     <div className="bg-background mt-20">
       <h1 className="font-extrabold my-5 px-1 md:px-3 text-slate-600 dark:text-slate-500">
@@ -21,10 +35,11 @@ const ProjectTracking = () => {
           </p>
           <p className="bold">
             Tech Used:{" "}
-            <span className="text-slate-600 dark:text-slate-400 text-sm">
-              NextJS 14, React 18, Mysql 8, NodeJS 20, TypeScript, Tailwind
-              CSS,Radix UI, NextAuth, Prisma, React-hook-form, and Zod
-            </span>
+            {tools.map((tool) => (
+              <Badge key={tool} className="mr-1" variant={"secondary"}>
+                {tool}
+              </Badge>
+            ))}
           </p>
           <div className="my-3 flex gap-3">
             <Button variant="outline" className=" border-ring">

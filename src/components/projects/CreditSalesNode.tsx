@@ -2,8 +2,18 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import creditSalesNode from "../../../public/creditSalesNode.png";
+import { Badge } from "../ui/badge";
 
 const CreditSalesNode = () => {
+  const tools = [
+    "HTML",
+    "CSS",
+    "NodeJS",
+    "ExpressJS",
+    "MySQL",
+    "JavaScript",
+    "Handlebars",
+  ];
   return (
     <div className="bg-background md:mt-20">
       <h1 className="font-extrabold my-5 px-1 md:px-3 text-slate-600 dark:text-slate-500">
@@ -26,10 +36,12 @@ const CreditSalesNode = () => {
             with all the features.
           </p>
           <p className="bold">
-            Tech Used:{" "}
-            <span className="text-slate-600 dark:text-slate-400 text-sm ">
-              HTML, CSS, NodeJS, ExpressJS, MySQL, JavaScript, and Handlebars
-            </span>
+            Tech Used:
+            {tools.map((tool) => (
+              <Badge key={tool} className="mr-1" variant={"secondary"}>
+                {tool}
+              </Badge>
+            ))}
           </p>
           <div className="my-3 flex gap-3">
             <Button

@@ -35,14 +35,16 @@ const ShamsMedex = () => {
             Equipment incorpoation that provides information about their producs
             and services.
           </p>
-          <p className="bold ">
-            Tech Used:{" "}
+          <div>
+            <span className="text-sm font-semibold text-muted-foreground">
+              Tech Used:{" "}
+            </span>
             {tools.map((tool) => (
               <Badge key={tool} className="mr-1" variant={"secondary"}>
                 {tool}
               </Badge>
             ))}
-          </p>
+          </div>
           <div className="my-3 flex gap-3">
             <Button
               variant="outline"

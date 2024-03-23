@@ -43,14 +43,17 @@ const CreditSales = () => {
             data changes, and accessing detailed information. A main dashboard
             provides real-time updates on sales, customers, and business status.
           </p>
-          <p className="bold ">
-            Tech Used:{" "}
+          <div>
+            <span className="text-sm font-semibold text-muted-foreground">
+              Tech Used:{" "}
+            </span>
             {tools.map((tool) => (
               <Badge key={tool} className="mr-1" variant={"secondary"}>
                 {tool}
               </Badge>
             ))}
-          </p>
+          </div>
+
           <div className="my-3 flex gap-3">
             <Button
               variant="outline"

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Sherzai",
   description:
     "It's a personal portfolio website that denotes my projects and services",
+  icons: {
+    icon: "/mylogo.png",
+  },
 };
 
 export default function RootLayout({

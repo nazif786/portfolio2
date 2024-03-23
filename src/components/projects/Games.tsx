@@ -28,14 +28,16 @@ const Games = () => {
             webAPI. it has search capabilites along with ordering by various
             variables that can be filtered for different platforms.
           </p>
-          <p className="bold">
-            Tech Used:{" "}
+          <div>
+            <span className="text-sm font-semibold text-muted-foreground">
+              Tech Used:{" "}
+            </span>
             {tools.map((tool) => (
               <Badge key={tool} className="mr-1" variant={"secondary"}>
                 {tool}
               </Badge>
             ))}
-          </p>
+          </div>
           <div className="my-3 flex gap-3">
             <Link href="https://loobay.vercel.app/" target="_blank">
               <Button variant="outline" className=" border-ring">

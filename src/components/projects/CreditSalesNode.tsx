@@ -21,8 +21,8 @@ const CreditSalesNode = () => {
         </div>
         <div className=" md:w-[36%] px-1 md:px-3">
           <p className="text-slate-600 dark:text-slate-400 text-sm mb-3 py-2">
-            it's a project that is renewd using NextJS (first project listed
-            here). it uses basic JavaScript and ExpressJS. it's fully functinal
+            it is a project that is renewd using NextJS (first project listed
+            here). it uses basic JavaScript and ExpressJS. it is fully functinal
             with all the features.
           </p>
           <p className="bold ">

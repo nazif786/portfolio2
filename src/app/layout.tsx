@@ -1,10 +1,10 @@
+import Footer from "@/components/Footer";
+import Nav from "@/components/Nav";
+import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
-import "./globals.css";
-import Nav from "@/components/Nav";
 import { Toaster } from "react-hot-toast";
-import Footer from "@/components/Footer";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

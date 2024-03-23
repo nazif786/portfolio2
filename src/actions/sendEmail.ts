@@ -3,7 +3,6 @@ import { Resend } from "resend";
 import { getErrorMessage } from "../lib/getErrorMessage";
 import ContactEmail from "../email/ContactEmail";
 import React from "react";
-import { error } from "console";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,8 +14,6 @@ const validateString = (value: unknown, maxLength: number) => {
 };
 
 export const sendEmail = async (formData: FormData) => {
-  // console.log("running on sever1");
-
   const senderEmail = formData.get("senderEmail");
   const subject = formData.get("subject");
   const message = formData.get("message");
@@ -37,19 +34,14 @@ export const sendEmail = async (formData: FormData) => {
       to: ["nazif.it@gmail.com"],
       reply_to: senderEmail as string,
       subject: subject as string,
-      //   text: message as string,
       react: React.createElement(ContactEmail, {
         message: message as string,
         senderEmail: senderEmail as string,
       }),
     });
-
-    // return Response.json(data);
+    return { data };
   } catch (error: unknown) {
-    return {
-      error: getErrorMessage(error),
-    };
+    console.log(error);
+    return { error: getErrorMessage(error) };
   }
-
-  return { data };
 };

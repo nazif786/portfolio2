@@ -34,7 +34,7 @@ const Navbar = () => {
       </nav>
       {isOpen && (
         <div className="absolute top-0 left-0 z-20 w-full h-dvh bg-accent">
-          <MobileNavLinks />
+          <MobileNavLinks setIsOpen={setIsOpen} />
         </div>
       )}
     </>

@@ -4,24 +4,22 @@ import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 import image from "../../../public/profilephoto.jpg";
 import { Button } from "../ui/button";
-import SocialIcons from "./SocialIcons";
-import { FlowbiteFilePdfSolid } from "../ui/icons/FlowbiteFilePdfSolid";
-import { BiFilePdf } from "../ui/icons/BiFilePdf";
 import { SolarFileRightBoldDuotone } from "../ui/icons/SolarFileRightBoldDuotone";
-import { SkillIconsNextjsDark } from "../ui/icons/skillsIcons/SkillIconsNextjsDark";
-import { SkillIconsReactDark } from "../ui/icons/skillsIcons/SkillIconsReactDark";
-import { SkillIconsExpressjsDark } from "../ui/icons/skillsIcons/SkillIconsExpressjsDark";
-import { SkillIconsJavascript } from "../ui/icons/skillsIcons/SkillIconsJavascript";
-import { SkillIconsNodejsDark } from "../ui/icons/skillsIcons/SkillIconsNodejsDark";
-import { SkillIconsTypescript } from "../ui/icons/skillsIcons/SkillIconsTypescript";
-import { SkillIconsCss } from "../ui/icons/skillsIcons/SkillIconsCss";
-import { SkillIconsTailwindcssDark } from "../ui/icons/skillsIcons/SkillIconsTailwindcssDark";
-import { SkillIconsPostgresqlDark } from "../ui/icons/skillsIcons/SkillIconsPostgresqlDark";
-import { SkillIconsMysqlDark } from "../ui/icons/skillsIcons/SkillIconsMysqlDark";
-import { SkillIconsMongodb } from "../ui/icons/skillsIcons/SkillIconsMongodb";
-import { SkillIconsHtml } from "../ui/icons/skillsIcons/SkillIconsHtml";
-import { SkillIconsRedisDark } from "../ui/icons/skillsIcons/SkillIconsRedisDark";
 import { SimpleIconsDrizzle } from "../ui/icons/skillsIcons/SimpleIconsDrizzle";
+import { SkillIconsCss } from "../ui/icons/skillsIcons/SkillIconsCss";
+import { SkillIconsExpressjsDark } from "../ui/icons/skillsIcons/SkillIconsExpressjsDark";
+import { SkillIconsHtml } from "../ui/icons/skillsIcons/SkillIconsHtml";
+import { SkillIconsJavascript } from "../ui/icons/skillsIcons/SkillIconsJavascript";
+import { SkillIconsMongodb } from "../ui/icons/skillsIcons/SkillIconsMongodb";
+import { SkillIconsMysqlDark } from "../ui/icons/skillsIcons/SkillIconsMysqlDark";
+import { SkillIconsNextjsDark } from "../ui/icons/skillsIcons/SkillIconsNextjsDark";
+import { SkillIconsNodejsDark } from "../ui/icons/skillsIcons/SkillIconsNodejsDark";
+import { SkillIconsPostgresqlDark } from "../ui/icons/skillsIcons/SkillIconsPostgresqlDark";
+import { SkillIconsReactDark } from "../ui/icons/skillsIcons/SkillIconsReactDark";
+import { SkillIconsRedisDark } from "../ui/icons/skillsIcons/SkillIconsRedisDark";
+import { SkillIconsTailwindcssDark } from "../ui/icons/skillsIcons/SkillIconsTailwindcssDark";
+import { SkillIconsTypescript } from "../ui/icons/skillsIcons/SkillIconsTypescript";
+import SocialIcons from "./SocialIcons";
 
 // border-solid border-2 border-orange-700 flex flex-row items-center justify-center
 const HeroSection = () => {
@@ -72,16 +70,16 @@ const HeroSection = () => {
             Front-end Interactivity with Robust Back-end Operations
           </p>
           <div className="flex space-x-3 justify-center my-5">
-            <Link href="">
+            <Link href="#contact">
               <Button variant="btn" size="btn">
-                Hire me
+                Contact me
               </Button>
             </Link>
-            {/* <Link href="/Nazifullah.pdf" target="_blank"> */}
-            <Button variant="btn_h" size="btn">
-              Resume <SolarFileRightBoldDuotone className="ml-4 text-2xl" />
-            </Button>
-            {/* </Link> */}
+            <Link href="/Nazifullah.pdf" target="_blank">
+              <Button variant="btn_h" size="btn">
+                Resume <SolarFileRightBoldDuotone className="ml-4 text-2xl" />
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="mb-5 w-[60%] md:w-[28%] rounded-full shadow-[0px_1px_0px_0px] shadow-primary m-auto">
@@ -90,7 +88,7 @@ const HeroSection = () => {
             alt="portfolio image"
             className="rounded-full object-cover border-solid scale-95 hover:scale-100 ease-out duration-500"
           />
-        </div> 
+        </div>
       </div>
       <div className="md:w-11/12 lg:w-9/12 mx-auto md:px-3 md:mt-7 flex flex-row space-x-0 md:space-x-3">
         <div className="hidden md:block">

@@ -10,7 +10,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-      <h1 className="border-2"> portfolio </h1>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import sales from "../../../public/sales.png";
+import issueTracker from "../../../public/issueTracker.png";
 import Link from "next/link";
 
 const ProjectTracking = () => {
@@ -30,7 +30,10 @@ const ProjectTracking = () => {
             <Button variant="outline" className=" border-ring">
               Live Demo
             </Button>
-            <Link href="https://github.com/nazif786/Issues_Tracker">
+            <Link
+              href="https://github.com/nazif786/Issues_Tracker"
+              target="_blank"
+            >
               <Button variant="default">Github Code</Button>
             </Link>
           </div>
@@ -40,7 +43,7 @@ const ProjectTracking = () => {
             width={650}
             height={650}
             sizes="360"
-            src={sales}
+            src={issueTracker}
             alt={"Project Image"}
           />
         </div>

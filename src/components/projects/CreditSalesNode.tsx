@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import sales from "../../../public/sales.png";
 import Link from "next/link";
+import creditSalesNode from "../../../public/creditSalesNode.png";
 
 const CreditSalesNode = () => {
   return (
@@ -15,7 +15,7 @@ const CreditSalesNode = () => {
             width={650}
             height={650}
             sizes="360"
-            src={sales}
+            src={creditSalesNode}
             alt={"Project Image"}
           />
         </div>
@@ -38,10 +38,17 @@ const CreditSalesNode = () => {
             >
               Live Demo
             </Button>
-            <Link href="https://github.com/nazif786/CreditSalesExpressJS">
+            <Link
+              href="https://github.com/nazif786/CreditSalesExpressJS"
+              target="_blank"
+            >
               <Button variant="default">Github Code</Button>
             </Link>
           </div>
+          <p>
+            <span className="font-bold">Demo user credentials:</span> <br />
+            username: test1234 <br /> password: Test@1234
+          </p>
         </div>
       </div>
     </div>

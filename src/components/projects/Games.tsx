@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import sales from "../../../public/sales.png";
+import gamingApp from "../../../public/gamingApp.png";
 import Link from "next/link";
 
 const Games = () => {
@@ -24,12 +24,12 @@ const Games = () => {
             </span>
           </p>
           <div className="my-3 flex gap-3">
-            <Link href="https://loobay.vercel.app/">
+            <Link href="https://loobay.vercel.app/" target="_blank">
               <Button variant="outline" className=" border-ring">
                 Live Demo
               </Button>
             </Link>
-            <Link href="https://github.com/nazif786/gamingApp">
+            <Link href="https://github.com/nazif786/gamingApp" target="_blank">
               <Button variant="default">Github Code</Button>
             </Link>
           </div>
@@ -39,7 +39,7 @@ const Games = () => {
             width={650}
             height={650}
             sizes="360"
-            src={sales}
+            src={gamingApp}
             alt={"Project Image"}
           />
         </div>

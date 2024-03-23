@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import sales from "../../../public/sales.png";
+import shamsMedex from "../../../public/shamsMedex.png";
 import Link from "next/link";
 
 const ShamsMedex = () => {
@@ -15,7 +15,7 @@ const ShamsMedex = () => {
             width={650}
             height={650}
             sizes="360"
-            src={sales}
+            src={shamsMedex}
             alt={"Project Image"}
           />
         </div>
@@ -39,7 +39,7 @@ const ShamsMedex = () => {
             >
               Live Demo
             </Button>
-            <Link href="https://github.com/nazif786/ShamsMedex">
+            <Link href="https://github.com/nazif786/ShamsMedex" target="_blank">
               <Button variant="default">Github Code</Button>
             </Link>
           </div>

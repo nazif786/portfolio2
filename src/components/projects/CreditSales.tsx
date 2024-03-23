@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import sales from "../../../public/sales.png";
+import Link from "next/link";
 
 const CreditSales = () => {
   return (
@@ -42,7 +43,12 @@ const CreditSales = () => {
             >
               Live Demo
             </Button>
-            <Button variant="default">Github Code</Button>
+            <Link
+              href="https://github.com/nazif786/mobileCreditSalesSystem"
+              target="_blank"
+            >
+              <Button variant="default">Github Code</Button>
+            </Link>
           </div>
         </div>
       </div>

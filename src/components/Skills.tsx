@@ -47,7 +47,10 @@ const Skills = () => {
 
   return (
     <section>
-      <div className="p-3 md:max-w-[85%] lg:max-w-[70%] m-auto h-dvh bg-background">
+      <div
+        id="skills"
+        className="p-3 md:max-w-[85%] lg:max-w-[70%] m-auto h-dvh bg-background"
+      >
         <div className="text-center">
           <h1 className="font-serif text-3xl"> My Skills</h1>
         </div>

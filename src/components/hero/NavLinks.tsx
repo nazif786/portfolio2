@@ -3,11 +3,11 @@ import { ModeToggle } from "./ToggleTheme";
 import Link from "next/link";
 export const links = [
   { label: "", href: "" },
-  { label: "Home", href: "/#home" },
-  { label: "About Me", href: "/#about" },
-  { label: "Skills", href: "/#skills" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Me", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 const NavLinks = () => {
   return (

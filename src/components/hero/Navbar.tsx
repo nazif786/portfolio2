@@ -9,7 +9,6 @@ import { ModeToggle } from "./ToggleTheme";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const ToggleMenu = () => {};
   return (
     <>
       <nav className="flex justify-between md:px-5 md:py-3">

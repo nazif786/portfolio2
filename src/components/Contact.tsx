@@ -24,7 +24,10 @@ const Contact = () => {
     }
   };
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center w-[100%] my-16 p-2 md:p-3 min-h-[250px] md:min-h-[700px] rounded-md bg-muted dark:bg-background">
+    <section
+      id="contact"
+      className="flex flex-col md:flex-row items-center justify-center w-[100%] my-16 p-2 md:p-3 min-h-[250px] md:min-h-[700px] rounded-md bg-muted dark:bg-background"
+    >
       <div className="bg-[url('/contactIcon.svg')] hidden md:block bg-no-repeat bg-contain md:bg-fit md:w-[30%] h-[450px] rounded-s-md"></div>
       <div className="md:w-[49%] md:my-10 md:mx-5 w-full">
         <div className="text-center text-xl font-semibold mb-3 ">

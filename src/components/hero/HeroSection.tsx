@@ -90,7 +90,7 @@ const HeroSection = () => {
             alt="portfolio image"
             className="rounded-full object-cover border-solid scale-95 hover:scale-100 ease-out duration-500"
           />
-        </div>
+        </div> 
       </div>
       <div className="md:w-11/12 lg:w-9/12 mx-auto md:px-3 md:mt-7 flex flex-row space-x-0 md:space-x-3">
         <div className="hidden md:block">

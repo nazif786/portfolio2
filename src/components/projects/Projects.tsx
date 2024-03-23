@@ -6,7 +6,7 @@ import ShamsMedex from "./ShamsMedex";
 
 const Projects = () => {
   return (
-    <section className="bg-background ">
+    <section id="projects" className="bg-background ">
       <div className="p-3 md:max-w-[85%] lg:max-w-[70%] m-auto bg-background">
         <div className="text-center">
           <h1 className="font-serif text-3xl"> My Projects</h1>

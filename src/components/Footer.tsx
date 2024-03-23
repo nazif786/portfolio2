@@ -4,7 +4,7 @@ const Footer = () => {
       <small>
         <p>&copy;2024 Nazifullah.</p>
       </small>
-      <p className="text-sm">
+      <p className="text-xs md:text-sm p-2">
         <span className="font-bold">About this Website:</span> built with React
         and Next.js(App Router and Server Actions), Typescipt, Tailwind CSS,
         ShandCN, React-Email & Resend, Versel Hosing.

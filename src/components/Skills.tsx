@@ -56,7 +56,7 @@ const Skills = () => {
           <h1 className="font-serif text-3xl"> My Skills</h1>
         </div>
         <div className="bg-background md:mt-28">
-          <section className="flex flex-col m-auto sm:flex-row my-12 ">
+          <section className="flex flex-col m-auto sm:flex-row my-10 md:my-12 ">
             <div className="sm:flex w-full sm:w-1/2 md:w-6/12">
               <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-5 mr-0 md:mr-7">
                 {SkillsData.map((skill, index) => (
@@ -93,7 +93,7 @@ const Skills = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full md:w-1/2 overflow-visible my-5 md:m-0 ml-3">
+            <div className="w-full md:w-1/2 overflow-visible my-5 md:m-0 mx-2">
               <div className="rounded-xl bg-accent p-3 md:p-10">
                 <section
                   className={`fade-left overflow-hidden ${isFadded ? "fade-out" : ""} min-h-[370px] `}

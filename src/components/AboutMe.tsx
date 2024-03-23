@@ -35,18 +35,20 @@ const AboutMe = () => {
           </ul>
         </div>
         <div className="flex space-x-3 justify-center mt-5 md:pt-10 pb-10">
-          <Link href="">
+          <Link href="#contact">
             <Button variant="btn" size="btn">
-              Hire me
+              Contact me
             </Button>
           </Link>
-          <Button
-            variant="btn_h"
-            size="btn"
-            className="border-solid border-slate-800 border-2"
-          >
-            Resume <SolarFileRightBoldDuotone className="ml-4 text-2xl" />
-          </Button>
+          <Link href="/Nazifullah.pdf" target="_blank">
+            <Button
+              variant="btn_h"
+              size="btn"
+              className="border-solid border-slate-800 border-2"
+            >
+              Resume <SolarFileRightBoldDuotone className="ml-4 text-2xl" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

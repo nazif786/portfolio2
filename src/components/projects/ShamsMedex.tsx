@@ -46,12 +46,15 @@ const ShamsMedex = () => {
             ))}
           </div>
           <div className="my-3 flex gap-3">
-            <Button
-              variant="outline"
-              className=" border-ring active:translate-x-2 "
-            >
-              Live Demo
-            </Button>
+            <Link href={"https://shams-medex.vercel.app/"} target="_blank">
+              <Button
+                variant="outline"
+                className=" border-ring active:translate-x-2 "
+              >
+                Live Demo
+              </Button>
+            </Link>
+
             <Link href="https://github.com/nazif786/ShamsMedex" target="_blank">
               <Button variant="default">Github Code</Button>
             </Link>

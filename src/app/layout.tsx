@@ -31,7 +31,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <header>
+          <header className="">
             <Nav />
           </header>
 

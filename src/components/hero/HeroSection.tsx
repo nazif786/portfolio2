@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
-import image from "../../../public/profilephoto.jpg";
+import image from "../../../public/profilephoto.png";
 import { Button } from "../ui/button";
 import { SolarFileRightBoldDuotone } from "../ui/icons/SolarFileRightBoldDuotone";
 import { SimpleIconsDrizzle } from "../ui/icons/skillsIcons/SimpleIconsDrizzle";
